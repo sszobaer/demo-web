@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    /*Font family*/
+    font-family: "Montserrat", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+:root{
+    --yellow:#E8DF02;
+}
+/*Common CSS End*/
+
+    /* Preloader start */
+    #preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #loader {
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid var(--yellow);
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    /*Preloader End*/
+
+    /*Menu bar start*/
+    .menuArea{
+        padding: 15px 0;
+    }
+    .alignment{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .menuConMain{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+        display: flex;
+        gap: 15px;
+    }
+    .menu li a{
+        color: black;
+        font-weight: 600;  
+    }
+    .menuBtn{
+        padding: 10px;
+        background: var(--yellow);
+        color:black !important;
+        border-radius: 20px;
+    }
+
+    /*Manu bar End*/
+    /*________________________________________________________________*/
+
+    /*Hero part start*/
+    .heroArea{
+      background: url(../img/bg1.webp) no-repeat center;
+        background-size: cover;
+        background-blend-mode: soft-light;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+    .Alignment{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .photo{
+        width: 150px; /* Adjust the size as needed */
+        height: auto;
+        border-radius: 50%; /* Make the photo circular if desired */
+        margin-left: 5%;    
+    }
+    .heroCon{
+        margin-left: 50%;
+        align-items: flex-end;
+    }
+    .heroCon h4{
+        font-size: 22px;
+        color: white;
+    }
+    .heroCon h1{
+        line-height: 0.75;
+        font-size: 78px;
+        font-weight: 800;
+        letter-spacing: -6px;
+    }
+    .heroCon h1 span{
+        display: block;    
+    }
+    .heroCon h1 span {
+        color:whitesmoke;  
+    }
+    
+    .heroCon h1 span + span {
+        color : var(--yellow);
+    }
+    .heroBtn{
+        display:inline-block;
+        margin-top: 5px;
+        padding: 10px 15px;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        border: 3px solid white;
+        border-radius: 30px;
+    }
+    /*Hero Part End*/
+    /*________________________________________________________________*/
+
+    /*projects start*/
+    .projectArea{
+        background: whitesmoke;
+        padding: 60px 0;
+    }
+    .projectHead{
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .projectHead h3{
+        font-size: 48px;
+        color: var(--yellow);
+        text-shadow: 0px 4px 19px black;
+    }
+    .projectHead h4{
+        font-size: 20px;
+    }
+    .projectConMain{
+        display: flex;
+        gap: 24px;
+    }
+    .projectCon{
+        width: 25%;
+        box-shadow: 0px 4px 19px rgba(21, 21, 21, 0.7);
+        border-radius: 30px;
+    }
+    .projectCon .projectConImg img{
+        border-radius: 30px 30px 0 0;
+        width: 100%;
+    }
+    .projectConInner{
+        background: white;
+        padding: 15px;
+        border-radius: 0 0 30px 30px;
+    }
+    .projectConInner h4{
+        font-weight: 900;
+    }
+    .durationNdClick{
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .durationNdClick p{
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .durationNdClick .ClickHere{
+        padding: 8px 10px;
+        background: var(--yellow);
+        color: black;
+        font-weight: 700;
+        border-radius: 30px;
+    }
+    /*projects End*/
+    /*________________________________________________________________*/
+
+    /*skills start*/
+    .skillArea{
+        padding: 80px 0;
+        background:url(../img/skillBgImg.png);  
+    }
+    
+    .skillConMain{
+        display: flex;
+        align-items: center;
+        justify-content: center;  /* Center horizontally */
+        column-gap: 100px;
+    }
+    
+    .skillCon h5{
+        font-size: 18px;
+        color: var(--yellow);
+        font-weight: 800;
+    }
+    
+    .skillCon h3{
+        font-size: 40px;
+        padding: 20px 0;
+        font-weight: 800;
+        color: white;
+    }
+    
+    .skillCon p{
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .progressArea{
+        width: 40%;
+        height: auto; /* Adjust height as needed */
+    }
+    
+    .skillCon{
+        width: 40%;
+    }
+    
+    .progressCon{
+        display: flex;
+        padding: 7px 0;
+        justify-content: space-between;
+    }
+    
+    .progressCon h5{
+        color: white;
+    }
+    
+    .progressCon p{
+        color: var(--yellow);
+    }
+    
+    .whiteField{
+        height: 5px;
+        width: 100%;
+        background: white;
+        border-radius: 10px;
+    }
+    
+    .achievementField{
+        height: 5px;
+        width: 85%;
+        background: var(--yellow);
+        border-radius: 10px;
+    }
+    
+    /*skills End*/
+    /*________________________________________________________________*/
+    
+    /*Education start*/
+    /*Education End*/
+    /*________________________________________________________________*/
+
+    /*Licence start*/
+    /*Licence End*/
+    /*________________________________________________________________*/
+
+    /*footer start*/
+    /*footer End*/
+    /*________________________________________________________________*/
+

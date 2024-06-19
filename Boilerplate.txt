@@ -1,0 +1,11 @@
+html with basic structure
+css with basic structure
+Image
+Google Font
+font Awesome
+Color
+{
+    yellow -> #E8DF02
+    black
+}
+destruturing
